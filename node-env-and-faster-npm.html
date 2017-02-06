@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>快速搭建node环境和加速npm</title>
+<script>
+</script>
+</head>
+<body>
+0. <a href="http://fengmk2.com/blog/2014/03/node-env-and-faster-npm.html">原文链接</a>
+
+1.安装nvm，对于windows系统安装nvmw
+通过git安装  git clone https://github.com/cnpm/nvmw.git
+将nvmw目录设置到环境变量
+set "PATH=d:\git\nvmw;%PATH%"
+
+2.通过nvmw安装任意版本的node和iojs
+输入nvmw 可以看到帮助和例子
+nvmw install node 
+坑: 默认下载失败，需要修改nvmw/fget.js 将Msxml2.XMLHTTP 改为Msxml2.ServerXMLHTTP
+
+3.使用cnpm加速npm
+通过--registry参数，国内镜像地址为http://registry.npm.taobao.org
+安装cnpm
+npm install cnpm -g --registry=http://registry.npm.taobao.org
+
+4.使用cnpm同步任意模块
+cnpm sync koa
+</body>
+</html>
