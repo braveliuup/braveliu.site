@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>程序员的自我修养</title>
+<style>
+    .main{
+        text-align: center;
+        margin: auto;
+        width: 800px;
+        padding-top: 120px;
+    }
+    .leftDiv{
+        float: left;
+    }
+    .rightDiv{
+        float: left;
+    }
+    .main span{
+        display: block;
+        margin: 20px;
+    }
+    
+    .menu{
+        position: absolute;
+        bottom: 100px;
+        left: 300px;
+        font-size: 28px;
+    }
+    
+    .menu a:hover, a:visited, a:link, a:active{
+        text-decoration: none;
+        color: #8bc34a;
+    }
+
+    .menu a:link, a:active, a:visited{
+        -webkit-filter: blur(6px); /* Chrome, Opera */
+        -moz-filter: blur(6px);
+        -ms-filter: blur(6px);    
+        filter: blur(6px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=6, MakeShadow=false); /* IE6~IE9 */
+        transition:filter .5s ease-out;
+        -webkit-transition:-webkit-filter .5s ease-out;
+        -moz-transition:-moz-filter .5s ease-out;
+        -ms-transition:-ms-filter .5s ease-out;
+    }
+    .menu a:hover{
+        -webkit-filter: blur(1px); /* Chrome, Opera */
+        -moz-filter: blur(1px);
+        -ms-filter: blur(1px);    
+        filter: blur(1px);
+        filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=1, MakeShadow=false); /* IE6~IE9 */
+    }
+ 
+  
+</style>
+</head>
+<body>
+    <div class="main">
+        <h1>程序员的自我修养</h1>
+        <div>
+            <div class="leftDiv">
+                <span>“你个死写代码的，臭IT民工！”</span>
+                <span>“其实我是一名程序员。”</span>
+                <span>“如果你非要叫我写代码的，可不可以不要加个‘死’字在前面。”</span>
+            </div>
+            <div class="rightDiv">
+                <span>“能不能不上班？”</span>  
+                <span>“不上班你养我啊？”</span>  
+                <span>“我养你啊。”</span>
+            </div>
+        </div>
+    </div>
+    <div class="menu"> 
+        <a href="node.html"><span >Node养成</span></a>
+    </div>
+</body>
+</html>
